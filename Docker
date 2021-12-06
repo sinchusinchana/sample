@@ -1,0 +1,7 @@
+FROM 
+
+EXPOSE 8080
+
+ADD target/Docker-sample.jar Docker-sample.jar
+
+ENTRYPOINT["java","-jar","/Docker-sample.jar"]
